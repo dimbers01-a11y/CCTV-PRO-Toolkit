@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17191c"><meta name="description" content="CCTV Pro Toolkit">
+<link rel="manifest" href="manifest.json"><title>CCTV Pro Toolkit</title>
+<style>
+:root{--orange:#f47b20;--orange2:#ff9b45;--dark:#17191c;--dark2:#24272b;--grey:#eef0f2;--mid:#737980;--white:#fff;--line:#dfe2e5;--shadow:0 10px 28px #11182716}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#eef0f2;color:#202327}
+header{background:linear-gradient(135deg,#121416,#2b2f34);color:white;padding:16px;position:sticky;top:0;z-index:20;box-shadow:0 5px 18px #0004}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;background:linear-gradient(145deg,var(--orange),#c85208);border-radius:14px;display:grid;place-items:center;box-shadow:0 6px 16px #f47b2040}.logo svg{width:34px;height:34px}.brand h1{margin:0;font-size:21px}.brand p{margin:2px 0 0;color:#cbd0d5;font-size:12px}
+main{max-width:1050px;margin:auto;padding:14px}.nav{display:flex;gap:7px;overflow:auto;padding:2px 0 14px}.nav button{white-space:nowrap;background:#fff;color:#34383d;border:1px solid var(--line);border-radius:999px;padding:9px 13px;font-weight:750}.nav button.active{background:var(--orange);color:#fff;border-color:var(--orange)}
+.card{background:#fff;border:1px solid #e0e3e6;border-radius:18px;padding:17px;margin-bottom:14px;box-shadow:var(--shadow)}.hero{background:linear-gradient(135deg,#24282c,#34393e);color:#fff;border:0}.hero p{color:#cdd1d5}.card h2{font-size:19px;margin:0 0 6px}.sub{color:var(--mid);font-size:13px;margin:0 0 15px}
+.hero .sub{color:#cdd1d5}.hero .tool{background:#30353a;color:#fff;border-color:#454b51}.hero .tool small{color:#bfc5ca}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.tool{text-align:left;border:1px solid var(--line);background:#fff;border-radius:15px;padding:14px;min-height:92px;box-shadow:0 4px 12px #0000000a}.tool .ico{font-size:25px}.tool b{display:block;margin-top:7px}.tool small{display:block;color:var(--mid);margin-top:3px}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}label{display:block;font-size:12px;font-weight:800;color:#454b51;margin:9px 0}input,select,textarea{width:100%;padding:11px 10px;margin-top:5px;border:1px solid #cdd2d7;border-radius:10px;background:#fff;font:inherit;color:#202327}textarea{min-height:90px;resize:vertical}input:focus,select:focus,textarea:focus{outline:2px solid #ffd4b5;border-color:var(--orange)}
+button{border:0;border-radius:10px;padding:10px 13px;background:var(--orange);color:#fff;font-weight:800}.secondary{background:#e5e7e9;color:#24272b}.danger{background:#d93434}.green{background:#0b9468}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.status{font-size:12px;color:#0b9468;font-weight:800;align-self:center}
+.item{background:#fafafa;border:1px solid var(--line);border-radius:13px;padding:12px;margin:9px 0}.itemhead{display:flex;justify-content:space-between;align-items:center}.small{padding:7px 9px;font-size:12px}
+.check{display:flex;gap:8px;align-items:center}.check input{width:auto;margin:0}
+.result{margin-top:12px;padding:13px;border-radius:11px;background:#fff5ed;border:1px solid #ffd4b5}.empty{color:var(--mid);font-size:13px}
+.photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:10px}.photo{position:relative;border-radius:12px;overflow:hidden;background:#ddd;aspect-ratio:1.2}.photo img{width:100%;height:100%;object-fit:cover}.photo button{position:absolute;right:5px;top:5px;padding:6px 8px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:8px}.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:9px}
+footer{text-align:center;color:#777f87;font-size:11px;padding:25px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.photo-grid{grid-template-columns:repeat(4,1fr)}}
+</style></head>
+<body>
+<header><div class="brand"><div class="logo"><svg viewBox="0 0 64 64" fill="none"><rect x="9" y="20" width="36" height="24" rx="5" fill="white"/><path d="M45 25l11-6v26l-11-6V25z" fill="white"/><circle cx="27" cy="32" r="8" fill="#f47b20"/></svg></div><div><h1>CCTV Pro Toolkit</h1><p>Professional CCTV engineering suite</p></div></div></header>
+<main><div class="nav" id="nav"></div><section id="app"></section></main><footer>CCTV Pro Toolkit • Project information is stored against the site record when connected to a backend.</footer>
+<script src="app.js"></script></body></html>

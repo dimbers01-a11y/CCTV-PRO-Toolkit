@@ -1,0 +1,17 @@
+{
+  "name": "CCTV Pro Toolkit",
+  "short_name": "CCTV Toolkit",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#eef0f2",
+  "theme_color": "#17191c",
+  "description": "Professional CCTV engineering suite",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
