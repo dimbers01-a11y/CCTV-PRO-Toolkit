@@ -3,13 +3,15 @@
   "short_name": "CCTV Toolkit",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f3f4f6",
-  "theme_color": "#111827",
+  "background_color": "#eef2f7",
+  "theme_color": "#0b1220",
+  "description": "Professional CCTV engineering calculators, schedules and field forms",
   "icons": [
     {
       "src": "icon.svg",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     }
   ]
 }
