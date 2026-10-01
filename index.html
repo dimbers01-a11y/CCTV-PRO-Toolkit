@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<link rel="manifest" href="manifest.json">
+<title>CCTV Pro Toolkit</title>
+<style>
+:root{--bg:#eef2f7;--panel:#fff;--nav:#0b1220;--text:#172033;--muted:#64748b;--line:#d9e0e8;--blue:#2563eb;--blue2:#1d4ed8;--green:#059669;--red:#dc2626;--shadow:0 5px 18px rgba(15,23,42,.08)}
+*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg)}
+header{background:linear-gradient(135deg,#0b1220,#172554);color:#fff;padding:18px 16px 16px;position:sticky;top:0;z-index:20;box-shadow:0 3px 14px #0003}
+.brand{display:flex;align-items:center;gap:11px}.logo{width:42px;height:42px;border-radius:12px;background:#2563eb;display:grid;place-items:center;font-size:23px}.brand h1{font-size:20px;margin:0}.brand p{margin:2px 0 0;color:#bfdbfe;font-size:12px}
+main{max-width:980px;margin:auto;padding:13px}
+.nav{display:flex;gap:7px;overflow-x:auto;padding:2px 0 13px;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}
+.nav button{white-space:nowrap;border:1px solid #dbe2ea;background:#fff;color:#334155;border-radius:999px;padding:9px 13px;font-weight:700;box-shadow:0 1px 3px #0000000b}.nav button.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.card{background:var(--panel);border:1px solid #e1e7ef;border-radius:16px;padding:16px;margin-bottom:13px;box-shadow:var(--shadow)}
+.card h2{font-size:18px;margin:0 0 8px}.sub{color:var(--muted);font-size:13px;margin:0 0 15px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.tool{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;text-align:left;box-shadow:0 2px 8px #0000000a}.tool b{display:block;margin-top:6px}.tool span{font-size:23px}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}
+label{display:block;font-size:12px;font-weight:750;margin:9px 0;color:#334155}input,select,textarea{display:block;width:100%;margin-top:5px;padding:11px 10px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;color:var(--text);font:inherit}textarea{min-height:90px;resize:vertical}input:focus,textarea:focus,select:focus{outline:2px solid #bfdbfe;border-color:var(--blue)}
+button{border:0;border-radius:9px;padding:10px 13px;background:var(--blue);color:#fff;font-weight:750;cursor:pointer}.secondary{background:#e2e8f0;color:#172033}.danger{background:var(--red)}.green{background:var(--green)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.result{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:12px;margin-top:12px;font-weight:750}
+.item{border:1px solid var(--line);border-radius:12px;padding:12px;margin:9px 0;background:#fafcff}.itemhead{display:flex;justify-content:space-between;align-items:center;gap:8px}.itemhead b{font-size:13px}
+.check{display:flex;align-items:center;gap:8px;font-size:14px;margin:4px 0 9px}.check input{width:auto;margin:0}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid var(--line);padding:8px;text-align:left}th{background:#f1f5f9}
+.status{font-size:12px;color:var(--green);font-weight:700;margin-left:5px}.muted{color:var(--muted);font-size:12px}
+.hero{background:linear-gradient(135deg,#eff6ff,#fff);border:1px solid #bfdbfe}.smallbtn{padding:7px 9px;font-size:12px}
+footer{text-align:center;color:var(--muted);padding:25px 10px;font-size:11px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<header><div class="brand"><div class="logo">📹</div><div><h1>CCTV Pro Toolkit</h1><p>Professional CCTV engineering tools</p></div></div></header>
+<main><div class="nav" id="nav"></div><section id="app"></section></main>
+<footer>Data is stored locally on this device. Export important project data for backup.</footer>
+<script src="app.js"></script>
+</body></html>
